@@ -1,0 +1,53 @@
+body {
+    font-size: 40px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.block,
+.inline {
+    background: #dad3d3;
+}
+
+.block {
+    padding: 30px;
+    margin: 50px;
+}
+
+/* ============================================================= */
+
+.block {
+    /* opacity: 1; */
+    /* visibility: hidden; */
+    overflow: scroll;
+    width: 400px;
+    height: 100px;
+}
+
+/* opacity прозрачность элемента (видимый для укрсора и кликов)
+1 не прозрачный
+0 не видимый
+ */
+/* visibility  не видимый для укрсора и кликов 
+visible виден
+hidden не винден
+ */
+
+/* overflow скрывает текс в пределах его границ
+hidden полностью
+auto дает скрол бар
+scroll всегда добавляет скрол бар
+*/
+
+.inline {
+
+}
+/* 
+opacity
+visible 
+работает и на inline и на img
+ */
+
+.img {}

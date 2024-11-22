@@ -1,0 +1,45 @@
+.some-text {
+    font-family: "Montserrat", "arial", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    text-align:jleft;
+        font-weight: 300;
+    font-style: italic;
+}
+
+/* название семейства шрифта
+безопасные шрифты через , */
+/* font-size размер шрифта */
+/* line-height высота строки */
+/* text aling куда прижат текст*/
+/* font weight жирность */
+/* font-style под наклоном или без */
+.dzp1{
+    font-family: "Open Sans", "arial", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align:left;
+        font-weight: 300;
+    font-style: italic;
+}
+
+.dzp2{
+    text-decoration: line-through;
+}
+.dzp3{
+    text-align: center;
+    text-transform: uppercase;
+}
+.dzp4{
+    word-spacing: 30px;
+    text-indent: 40px;
+    text-decoration: overline; 
+    text-decoration-style: wavy;
+    color: #2d06dd;
+}
+
+.dzp5{
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-style: double;
+}

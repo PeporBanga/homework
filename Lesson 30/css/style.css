@@ -1,0 +1,71 @@
+body {
+    font-size: 40px;
+}
+
+/* ============================================================= */
+* {
+    box-sizing: border-box;
+}
+
+.block,
+.inline {
+    background: #e9a54c;
+}
+
+/* .block {
+    /* padding: 50px; */
+/* margin: 50px; */
+/* padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px; */
+/* padding: 30px 60px 10px 100px;
+    padding: 30px 60px 10px  */
+/* padding: 30px 60px;
+    margin: 50px; */
+
+
+/* padding внутренний отступ */
+/* margin внешний отступ */
+/* на margin тже самое действует что и на padding */
+/* .block-1{
+    margin: 100px ;
+} */
+/* .block-2{
+    margin-top: 100px;
+} */
+/*  margin может быть отрицательным  */
+/* inline с  padding и margin не работают */
+/* img тоже самое */
+
+.block {
+    /* border: 10px solid #f3ff4f; */
+    /* border-top: 15px double #000;
+    border-width: 10px ;
+    border-style: dotted;
+    border-color: red;
+    border-bottom-color: #000; */
+    /* border-radius: 30px; */
+    /* border-top-right-radius: 40px; */
+    /* border-radius: 30px 40px 0 0; */
+    outline: 10px solid #f3ff4f;
+}
+
+/* 
+solid-сплашная
+dashed-прерывистая
+dotted-точки
+double-двойная
+groove-объем
+border-t r b l стороны
+border-width - толщина
+border-style - стиль
+border-color - цвет
+border-radius - скругление px или % (можно каждый угол по отдельности)
+ */
+/* inline тоже все не работает  */
+.img {
+    border: 10px solid #f3ff4f;
+    border-radius: 30px;
+}
+/* величивается сам img */

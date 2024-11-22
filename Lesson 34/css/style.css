@@ -1,0 +1,30 @@
+body{ 
+    font-size: 40px;
+}
+*{
+    box-sizing: border-box;
+}
+.block, .inline{
+    background: #dad3d3;
+}
+.block{
+    padding: 30px;
+    margin: 50px;
+    }
+/* ============================================================= */
+
+.block{
+/* display: inline; */
+display:inline-block;
+width: 400px;
+}
+
+.inline{
+display: block;
+}
+/* none скрывает элемент */
+
+.img{
+display: block;
+}
+/* рабоатет все  */

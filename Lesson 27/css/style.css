@@ -1,0 +1,24 @@
+/* приоретет 10 */
+.block{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+/* приоретет 10 */
+.block-2{
+    background: red;
+}
+/* приоретет 100 */
+#block{ 
+    background: green;
+}
+/* приоретет 1 */
+div{
+    background: purple !important; 
+}
+/* !important приоретет 10 000 */
+
+div.block{
+    background: #001234;
+}
+/* приоретет 1+10=11 */

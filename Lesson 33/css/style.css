@@ -1,0 +1,33 @@
+body{ 
+    font-size: 40px;
+}
+*{
+    box-sizing: border-box;
+}
+.block, .inline{
+    background: #dad3d3;
+}
+.block{
+    padding: 30px;
+    margin: 50px;
+    }
+/* ============================================================= */
+
+.block{
+box-shadow:  11px 15px 10px 10px #000, -11px -15px 10px  #f31818 ;
+border-radius: 30px;
+}
+/*  11 сдвиг тени по оси X 
+    5 по оси Y
+    10 размытие тени
+    30 увеличение тени( можно не использовать)
+    inset внутренняя тень 
+    можно делать 2 тени
+*/
+.inline{
+
+}
+/* тени не работают  */
+.img{
+    box-shadow:  11px 15px 10px 30px #d61010 ;
+}
