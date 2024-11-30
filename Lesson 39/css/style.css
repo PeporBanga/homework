@@ -1,0 +1,66 @@
+body {
+    font-size: 40px;
+    background: #16171b;
+    margin: 20px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flexbox {
+    display: flex;
+    border: 20px solid #edddbd;
+    min-height: 50vh;
+    box-shadow: 0 0 3.75rem -0.625rem #00000066;
+}
+
+.flexbox__item {
+    border: 20px solid #b9a074;
+}
+
+.flexbox__item:nth-child(2) .flexbox__content {
+    padding: 60px 40px;
+}
+
+.flexbox__content {
+    border: none;
+    padding: 40px;
+    background: linear-gradient(#6f4916, #7e5926);
+}
+
+/* ====================================================== */
+
+.flexbox {
+    display: flex;
+    /* justify-content: center; */
+    /* выравнивание по горизонтали space-вывавнивание равномерное между самимми элементами  */
+    /* align-items: center;
+    выравнивание по вертикали */
+    flex-wrap: wrap-reverse;
+    /* при изменении размера экрана элементы не выхоят за границу, а перемещаются в нем */
+}
+
+.flexbox__item-one{
+    /* align-self: start; */
+    /* order: 3; */
+    /* перемещение элементов */
+    /* flex-basis: 30%; */
+    /* пространстов которое должен занимать элемент  */
+}
+
+.flexbox__item-two{
+/* order: 1; */
+flex-basis: 400px;
+/* flex-grow: 1 ; */
+/* элемент будет занимать остаточное место, которое не занимаю отстальные элементы  */
+flex-shrink: 1;
+/* элемент будет уменьшаться по  размеру, если ему не будет хватать места на экране, будет меньше чем fl-bas */
+}
+
+.flexbox__item-three{
+/* order: 2; */
+flex-basis: auto;
+}
