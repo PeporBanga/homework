@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML lesson 1</title>
+    <link rel="shortcut icon" href="html-logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- <form action=""> контактные формы для сайта</form> -->
+    <!-- name имя формы, индивидуальное 
+    autocomplete on/off атомотический ввод данных
+<input type="text"> поле ввода -->
+    <!-- <button type="submit">отправить</button>
+<button type="reset">очистить </button> -->
+    <!-- <select name="213" >чтобы можно было вибироать из вариантов</select>
+<option value="">сам вариант</option> -->
+    <!-- <textarea name="" id="" cols="30 сколько букв в строчку влазиет" rows="10 сколько строк">поле для сообщения </textarea> -->
+    <!-- <label for="">имя для полей и тд</label> -->
+    <!-- <fieldset>для группировки форм</fieldset>
+    <legend>дать название группе элементов</legend> -->
+    <!-- placeholders подсказка для пользователя
+    required вы пропустили поле(обязательное поле) -->
+
+    <!-- <form>
+        <label>
+            Текст
+            <input type="text" placeholder="Ваше имя">
+        </label>
+        <br>
+        <label>
+            Число
+            <input type="number" max="5" min="0" step="0.2" шаг>
+        </label>
+        <br>
+        <label>
+            Пароль
+            <input type="password" required>
+        </label>
+        <br>
+        <label>
+            Телефон
+            <input type="tel">
+        </label>
+        <br>
+        <label>
+            Почта
+            <input type="email">
+        </label>
+        <br>
+        <label>
+            Чекбокс галочка
+            <input type="checkbox">
+        </label>
+        <br>
+        <label>
+            радио1
+            <input type="radio" name="radio" выбор пунктов>
+        </label>
+        <br>
+        <label>
+            радио2
+            <input type="radio" name="radio">
+        </label>
+        <br>
+        <label>
+            Поиск
+            <input type="search" поиск по старнице>
+        </label>
+        <br>
+        <label>
+            Дата
+            <input type="date">
+        </label>
+        <br>
+        <label>
+            Фаил
+            <input type="file">
+        </label>
+        <br>
+        <br>
+        <button type="reset">Сбросить</button>
+        <button type="submit">Отправить </button>
+    </form> -->
+
+    <form>
+        <fieldset>
+            <legend>О Вас </legend>
+            <label>
+                Имя
+                <input type="text" placeholder="Имя" required>
+            </label>
+            <br>
+            <br>
+            <label>
+                Дата Рождения
+                <input type="date">
+            </label>
+            <br>
+            <br>
+            <label>
+                Телефон
+                <input type="tel" placeholder="Ваш номер телефона" required>
+            </label>
+            <br>
+            <br>
+            <label>
+                Почта
+                <input type="email" placeholder="Ваша почта">
+            </label>
+            <br>
+            <br>
+            <label type="text">
+                Откуда о нас узнали 
+                <br>
+                <label>
+                    Интернет
+                    <input type="radio" name="radio">
+                </label>
+                <br>
+                <label>
+                    Друзья
+                    <input type="radio" name="radio">
+                </label>
+                <br>
+                <label>
+                    Давний пользователь
+                    <input type="radio" name="radio">
+                </label>
+            </label>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Оцените наш продукт</legend>
+            <label for="">
+                Качество
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </label>
+            <br>
+            <label for="">
+                Цена
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </label>
+            <br>
+            <label for="">
+                Доступность
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </label>
+            <br>
+            <label for="">
+                Скорость доставки
+                <select name="" id="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                </select>
+            </label>
+            <br>
+            <label>
+                Общая оценка
+                <input type="number" max="5" min="1" step="0.5" шаг>
+            </label>
+            <br>
+            <br>
+            <label for="">
+                Ваш отзыв
+                <textarea name="" id="" cols="15">
+                </textarea>
+            </label>
+            <br>
+            <br>
+            <label>
+                Ваше фото
+                <input type="file">
+            </label>
+
+        </fieldset>
+        <br>
+        <br>
+        <button type="submit">отправить</button>
+        <button type="reset">очистить </button>
+</body>
+
+</html>
