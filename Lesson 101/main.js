@@ -16,14 +16,6 @@
 // console.log(checkForName(users, 'Denis' ))
 
 
-// const number = [10, 20, 5, 14, 15, 72]
-// function checkForNumber(){
-//     for (let i = 0; i <= 10; i = i + 1 ){
-//         if (i > 10) 
-// }
-// }
-
-// console.log(checkForNumber() )
 
 
 
@@ -51,4 +43,23 @@
 // console.log(calc(100, 'division', 50))
 
 
+
+// ==========================================================================================
+
+
+// const number = [10, 20, 5, 14, 15, 72]
+// function check(aro, item){    
+// for (let i = 0; i < aro.length; i++) {
+//         if (aro[i] > item){
+//         }
+//             console.log (check(number, 10))
+//     }}
+
+
+
+    const number = [11, 20, 5, 14, 15, 72]
+        for (let i = 0; i < number.length; i++) {
+            if (number[i] > 10)
+                console.log (number[i])
+        }
 

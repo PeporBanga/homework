@@ -72,6 +72,7 @@
 
 
 const users = [
+
     {
         name: 'daniil',
         age: 23,
@@ -102,18 +103,19 @@ const users = [
         country: 'Russia',
         city: 'Ekaterinburg',
         animal: 'mous',
-        isAdmin: true
+        isAdmin: false
     }
 ]
-let simple;
-simple = 0
-function checkFor(array, item)
-{
-for(let i = 0; i < array.length; i++){
-    if(array[i] === item)
-        return  (simple = simple + 1)
-}
+let simple = 0;
 
+
+for(let i = 0; i < users.length; i++){
+    if(users[i].isAdmin == false){
+        simple = simple + 1;
+
+    }
 }
-console.log(checkFor(users, false))
-// 
+console.log (simple)
+
+
+
