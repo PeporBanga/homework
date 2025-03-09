@@ -67,7 +67,7 @@
 .about__img-button::before {
     content: '';
     position: absolute;
-    border: 1px solid #ceaad0;
+    border: 1px solid var(--accent-color-2);
     border-radius: 100%;
     inset: 5px;
     opacity: 0;
@@ -204,7 +204,7 @@
 .program__price-text {
     line-height: 1.6;
     text-transform: uppercase;
-    color: #ceaad0;
+    color: var(--accent-color-2);
     margin-bottom: 5px;
 }
 
@@ -363,7 +363,7 @@
 }
 
 .accordion-content__title {
-    color: #ceaad0;
+    color: var(--accent-color-2);
     line-height: 1.6;
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -383,7 +383,7 @@
 .accordion-content__icon {
     width: 24px;
     height: 24px;
-    border: 1px solid #ceaad0;
+    border: 1px solid var(--accent-color-2);
     border-radius: 50%;
     display: inline-flex;
     align-items: center;
@@ -625,7 +625,7 @@
 }
 
 .swiper-slide-prev.testimonials__slide,
-.swiper-slide-next.testimonials__slide{
+.swiper-slide-next.testimonials__slide {
     opacity: 0.5;
 }
 
@@ -664,7 +664,7 @@
 
 .testimonials__student-inst {
     margin: 0 auto;
-    color: #ceaad0;
+    color: var(--accent-color-2);
 }
 
 .testimonials__quote {}
@@ -678,7 +678,7 @@
     margin-bottom: 10px;
 }
 
-.testimonials__scrollbar{
+.testimonials__scrollbar {
     background: var(--accent-bg);
 }
 
@@ -688,9 +688,138 @@
     height: 7px;
 }
 
-.swiper-scrollbar-drag{
-background: var(--accent-color);
+.swiper-scrollbar-drag {
+    background: var(--accent-color);
 }
+
+/* ================================================================= */
+
+.contact {
+    padding: 140px 0;
+    background: url("../img/decor/bg-contact.png") 50% 0% / cover no-repeat;
+}
+
+.contact__inner {
+    display: flex;
+    align-items: end;
+    gap: 84px;
+    position: relative;
+}
+
+.contact__inner::before {
+    content: url("../img/decor/berries.png");
+    position: absolute;
+    top: -4%;
+    left: 0%;
+}
+
+.contact__inner::after {
+    content: url("../img/decor/berries-2.png");
+    position: absolute;
+    top: 4%;
+    right: 0%;
+}
+
+.contact__img img {
+    width: 100%;
+    filter: drop-shadow(0px 4px 30px #c6b0a14d);
+}
+
+.contact__body {
+    max-width: 420px;
+}
+
+.contact__title {
+    margin-bottom: 20px;
+}
+
+.contact__text {
+    margin-bottom: 40px;
+}
+
+.contact__form {}
+
+.contact__lable {
+    margin-bottom: 10px;
+}
+
+.contact__input {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--input-color);
+    background: #00000000;
+    border-radius: 100px;
+    padding: 19px 42px 19px 28px;
+    font-size: 16px;
+    transition: var(--transition);
+    margin-bottom: 20px;
+}
+
+.contact__input:hover {
+    border-color: var(--accent-color);
+}
+
+.contact__input::placeholder {
+    color: var(--input-color);
+    transition: var(--transition);
+}
+
+.contact__input:hover::placeholder {
+    color: var(--accent-color);
+}
+
+.contact__check-lable {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+    max-width: 288px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.contact__check-lable a {
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+.contact__check-lable:hover a {
+    color: var(--accent-color);
+}
+
+.contact__checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid var(--input-color);
+    transition: var(--transition);
+    border-radius: 4px;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition);
+}
+
+.contact__checkbox::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("../img/icons/check.svg") 50% 50% no-repeat;
+    opacity: 0;
+}
+
+.contact__checkbox:hover {
+    border: 1.5px solid var(--accent-color);
+}
+
+.contact__checkbox:checked {
+    background: var(--accent-color);
+    border: 1.5px solid var(--accent-color);
+}
+
+.contact__checkbox:checked::before {
+    opacity: 1;
+}
+
 
 /* ============================================================== */
 /* ============================================================== */
@@ -716,6 +845,13 @@ background: var(--accent-color);
 
     .tab-controls {
         flex-wrap: wrap;
+    }
+
+    /* ================= */
+
+    .contact__inner::after {
+        top: -20%;
+        right: 0%;
     }
 
     /* ================= */
@@ -754,6 +890,13 @@ background: var(--accent-color);
     }
 
     .accordion-content {
+        gap: 30px;
+    }
+
+    /* ============================== */
+
+    .contact__inner {
+        align-items: center;
         gap: 30px;
     }
 }
@@ -801,6 +944,16 @@ background: var(--accent-color);
 
     /* ================= */
 
+    .contact__inner{
+        justify-content: center;
+    }
+
+.contact__img{
+    display: none;
+}
+
+    /* ================= */
+
     .footer__inner {
         justify-content: center;
         grid-template: none;
@@ -825,10 +978,10 @@ background: var(--accent-color);
 
     /* ================= */
 
-.testimonials__scrollbar.swiper-scrollbar{
-    width: 50%;
-    margin: 0 auto;
-}
+    .testimonials__scrollbar.swiper-scrollbar {
+        width: 50%;
+        margin: 0 auto;
+    }
 
 }
 
@@ -909,15 +1062,23 @@ background: var(--accent-color);
     }
 
     /* ===================== */
-
-
-    .testimonials__inner{
+    
+    
+    .testimonials__inner {
         flex-direction: column;
         align-items: stretch;
     }
-    .testimonials__nav{
+    
+    .testimonials__nav {
         align-self: end;
     }
+
+    /* ===================== */
+
+    .contact__inner::before {
+content: none;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -1018,11 +1179,22 @@ background: var(--accent-color);
         margin-bottom: 20px;
     }
 
+    /* ====================================== */
+
+    .testimonials__slide {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
 /* ====================================== */
 
-.testimonials__slide{
-    flex-direction: column;
-    align-items: center;
+.contact{
+    padding-bottom: 80px;
+}
+
+.contact__title,
+.contact__text{
     text-align: center;
 }
 
@@ -1067,11 +1239,11 @@ background: var(--accent-color);
 
     /* =============================== */
 
-    .testimonials__inner{
+    .testimonials__inner {
         margin-bottom: 20px;
     }
 
-    .testimonials__slide{
+    .testimonials__slide {
         padding: 30px 10px 30px;
     }
 }
