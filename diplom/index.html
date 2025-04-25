@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VeraVla edu</title>
     <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="body">
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-inner">
-                        <a class="header__logo" href="/">
+                        <a class="header__logo" href="">
                             <img src="./img/logo/logo.png" alt="логотип">
                         </a>
                         <address class="header__contacts">
@@ -30,56 +31,97 @@
                             <img src="./img/icon/headset.png" alt="наушники">
                         </button>
                         <div class="consultation__text">
-                            Бесплатная консультация
+                            Бесплатная
+                            <span>консультация</span>
                         </div>
+                    </div>
+                    <div class="header__whatsap">
+                        <button class="whatsap__img" type="button">
+                            <img src="./img/icon/whatsap.png" alt="whatsap">
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="header__hero">
                 <div class="container">
-                    <div class="header__title">
-                        <p>Добро пожаловать в онлайн школу</p>
-                        <h1 class="title">
-                            VeraVla edu!
-                        </h1>
-                    </div>
-                    <div class="header__text">
-                        Переквалифицируйся в разработчика искусственного интеллекта и получи высокооплачиваемую
-                        работу
-                    </div>
-                    <div class="header__warranty">
-                        <div class="warranty__img">
-                            <img src="../img/icon/diploma.png" alt="диплом">
+                    <div class="header__hero-inner">
+                        <div class="header__title">
+                            <p>Добро пожаловать в онлайн школу</p>
+                            <h1 class="title">
+                                VeraVla edu!
+                            </h1>
                         </div>
-                        <div class="warranty__text">
-                            <span>Мы обучаем с гарантией! </span>
-                            <p>Первый месяц действует гарантия 100% возврата денег, если тебя не устроят наши курсы</p>
+                        <div class="header__text">
+                            Переквалифицируйся в разработчика искусственного интеллекта и получи высокооплачиваемую
+                            работу
                         </div>
-                    </div>
-                    <button class="header__button button" type="button">
-                        Записаться на ознакомительный вебинар
-                    </button>
-                    <div class="header__down">
-                        Листайте вниз
-                        <div class="ellipse">
-
+                        <div class="header__warranty">
+                            <div class="warranty__img">
+                                <img class="warranty__border" src="./img/Rectangle 4.png" alt="">
+                                <img src="./img/icon/diploma.png" alt="диплом">
+                            </div>
+                            <div class="warranty__text">
+                                <span>Мы обучаем с гарантией! </span>
+                                <p>Первый месяц действует гарантия 100% возврата денег, если тебя не устроят наши курсы
+                                </p>
+                            </div>
                         </div>
-                        <button class="oval" type="button">
-                            <a href="#"></a>
+                        <button class="header__button button" type="button">
+                            Записаться на ознакомительный вебинар
                         </button>
+                        <div class="modal">
+                            <button class="modal__close-btn">X</button>
+                            <div class="modal__window">
+                                <div class="modal__title">
+                                    <span>
+                                        Записаться
+                                    </span>
+                                    на ознакомительный вебинар
+                                </div>
+                                <div class="modal__input name">
+                                    Ваше Ф.И.О:
+                                    <input type="text" placeholder="Иван Иванович Иванов">
+                                </div>
+                                <div class="modal__input tel">
+                                    Номер телефона:
+                                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                                </div>
+                                <div class="modal__input email">
+                                    Ваш e-mail:
+                                    <input type="email" placeholder="name@gmail.com">
+                                </div>
+                                <div class="modal__input data">
+                                    Выберите дату и время вебинара:
+                                    <input type="datetime-local" placeholder="2021-12-05 18.00">
+                                </div>
+                                <a href="/" class="modal__button">
+                                    Записаться
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header__down">
+                            Листайте вниз
+                            <div class="header__ellipse">
+                            </div>
+                            <a class="header__oval" href="#footer">
+                            </a>
+                        </div>
+                        <div class="header__fon">
+                            <div class="header__fon-one">
+                                <img src="./img/fon/Neuron1.png" alt="">
+                                <div class="header__fon-blick">
+                                    <img src="./img/fon/blick-header.png" alt="">
+                                </div>
+                            </div>
+                            <div class="header__fon-two">
+                                <img src="./img/fon/Neuron2.png" alt="">
+                            </div>
+                            <div class="header__fon-three">
+                                <img src="./img/fon/Neuron3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="header__line line"></div>
                     </div>
-                    <div class="header__fon">
-                        <div class="one">
-                            <img src="./img/fon/Neuron1.png" alt="">
-                        </div>
-                        <div class="two">
-                            <img src="./img/fon/Neuron2.png" alt="">
-                        </div>
-                        <div class="three">
-                            <img src="./img/fon/Neuron3.png" alt="">
-                        </div>
-                    </div>
-                    <div class="header__line line"></div>
                 </div>
             </div>
         </header>
@@ -101,6 +143,7 @@
                         </div>
                         <ul class="about__list">
                             <li class="about__list-item">
+                                <img class="about__border" src="./img/Rectangle 4.png" alt="">
                                 <div class="about__list-img">
                                     <img src="./img/icon/manager.png" alt="">
                                 </div>
@@ -109,6 +152,7 @@
                                 </p>
                             </li>
                             <li class="about__list-item">
+                                <img class="about__border" src="./img/Rectangle 4.png" alt="">
                                 <div class="about__list-img">
                                     <img src="./img/icon/blockchain.png" alt="">
                                 </div>
@@ -118,6 +162,7 @@
                                 </p>
                             </li>
                             <li class="about__list-item">
+                                <img class="about__border" src="./img/Rectangle 4.png" alt="">
                                 <div class="about__list-img">
                                     <img src="./img/icon/web_design.png" alt="">
                                 </div>
@@ -127,6 +172,7 @@
                                 </p>
                             </li>
                             <li class="about__list-item">
+                                <img class="about__border" src="./img/Rectangle 4.png" alt="">
                                 <div class="about__list-img">
                                     <img src="./img/icon/survey.png" alt="">
                                 </div>
@@ -136,6 +182,7 @@
                                 </p>
                             </li>
                             <li class="about__list-item lower">
+                                <img class="about__border" src="./img/Rectangle 4.png" alt="">
                                 <div class="about__list-img">
                                     <img src="./img/icon/people.png" alt="">
                                 </div>
@@ -145,6 +192,7 @@
                                 </p>
                             </li>
                             <li class="about__list-item lower">
+                                <img class="about__border" src="./img/Rectangle 4.png" alt="">
                                 <div class="about__list-img">
                                     <img src="./img/icon/conference.png" alt="">
                                 </div>
@@ -154,6 +202,7 @@
                                 </p>
                             </li>
                             <li class="about__list-item lower">
+                                <img class="about__border" src="./img/Rectangle 4.png" alt="">
                                 <div class="about__list-img">
                                     <img src="./img/icon/skyscrapers.png" alt="">
                                 </div>
@@ -170,7 +219,10 @@
             <section class="main__ai ai">
                 <div class="container">
                     <div class="ai__inner">
-                        <img class="ai__fon" src="./img/fon/ia.png" alt="логотип AI">
+                        <div class="ai__fon">
+                            <img class="ai__ai" src="./img/fon/ia.png" alt="логотип AI">
+                            <img class="ai__blic" src="./img/fon/blic.png" alt="">
+                        </div>
                         <div class="ai__title">
                             <h2>Искусственный <p>
                                     интеллект
@@ -213,7 +265,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <button class="ai__button button">
+                        <button class="ai__button button " type="button">
                             Записаться на ознакомительный вебинар
                         </button>
                         <div class="ai__line line"></div>
@@ -283,7 +335,8 @@
                 <div class="container">
                     <div class="advantages__inner">
                         <div class="advantages__fon">
-                            <img src="./img/fon/brain.png" alt="">
+                            <img class="advantages__fon-brain" src="./img/fon/brain.png" alt="">
+                            <img class="advantages__fon-blik" src="./img/fon/blik.png" alt="">
                         </div>
                         <div class="advantages__title">
                             <h2>
@@ -329,7 +382,7 @@
                                 </div>
                             </li>
                         </ul>
-                        <button class="advantages__button button">
+                        <button class="advantages__button button ">
                             Записаться на ознакомительный вебинар
                         </button>
                         <div class="advantages__line line"></div>
@@ -341,84 +394,648 @@
                     <div class="program__inner">
                         <div class="program__title">
                             <h2>
-                                Что я узнаю 
+                                Что я узнаю
                                 <span>
-                                    из этих курсов? 
+                                    из этих курсов?
                                 </span>
                             </h2>
-                        </div>    
-                        <div class="program__text">
-                                Полностью весь курс состоит из 3 частей
                         </div>
-                            <ul class="accordion-list">
-                                <li class="accordion-list__item">
-                                    <a class="accordion-list__control" href="#">
-                                        <h3 class="accordion-list__control-title">
-                                            AI - Junior Level.  
-                                            <span>
-                                                Продолжительность 1 год 
-                                            </span>
-                                        </h3>
-                                        <div class="accordion-list__control-icon">
-                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <mask id="path-1-inside-1_12701_8" fill="white">
-                                                <path d="M0 6C0 2.68629 2.68629 0 6 0H26C29.3137 0 32 2.68629 32 6V26C32 29.3137 29.3137 32 26 32H6C2.68629 32 0 29.3137 0 26V6Z"/>
-                                                </mask>
-                                                <path d="M0 6C0 2.68629 2.68629 0 6 0H26C29.3137 0 32 2.68629 32 6V26C32 29.3137 29.3137 32 26 32H6C2.68629 32 0 29.3137 0 26V6Z" fill="url(#paint0_linear_12701_8)" fill-opacity="0.11"/>
-                                                <g clip-path="url(#paint1_diamond_12701_8_clip_path)" data-figma-skip-parse="true" mask="url(#path-1-inside-1_12701_8)"><g transform="matrix(-0.015214 0.0149677 -0.0149677 -0.0357197 16 16)"><rect x="0" y="0" width="1188.8" height="707.87" fill="url(#paint1_diamond_12701_8)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="1188.8" height="707.87" transform="scale(1 -1)" fill="url(#paint1_diamond_12701_8)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="1188.8" height="707.87" transform="scale(-1 1)" fill="url(#paint1_diamond_12701_8)" opacity="1" shape-rendering="crispEdges"/><rect x="0" y="0" width="1188.8" height="707.87" transform="scale(-1)" fill="url(#paint1_diamond_12701_8)" opacity="1" shape-rendering="crispEdges"/></g></g><path d="M6 2H26V-2H6V2ZM30 6V26H34V6H30ZM26 30H6V34H26V30ZM2 26V6H-2V26H2ZM6 30C3.79086 30 2 28.2091 2 26H-2C-2 30.4183 1.58172 34 6 34V30ZM30 26C30 28.2091 28.2091 30 26 30V34C30.4183 34 34 30.4183 34 26H30ZM26 2C28.2091 2 30 3.79086 30 6H34C34 1.58172 30.4183 -2 26 -2V2ZM6 -2C1.58172 -2 -2 1.58172 -2 6H2C2 3.79086 3.79086 2 6 2V-2Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_DIAMOND&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.28627452254295349,&#34;g&#34;:0.72549021244049072,&#34;b&#34;:0.90980392694473267,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.12156862020492554,&#34;g&#34;:0.30196088552474976,&#34;b&#34;:0.37647059559822083,&#34;a&#34;:0.43000000715255737},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[],&#34;transform&#34;:{&#34;m00&#34;:-30.428070068359375,&#34;m01&#34;:-29.935483932495117,&#34;m02&#34;:46.181777954101562,&#34;m10&#34;:29.935483932495117,&#34;m11&#34;:-71.439468383789062,&#34;m12&#34;:36.751995086669922},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}" mask="url(#path-1-inside-1_12701_8)"/>
-                                                <path d="M10.0605 18.9395L17.0605 11.9395M21.9392 18.9395L14.9392 11.9395" stroke="#4ABCEC" stroke-width="3"/>
-                                                <defs>
-                                                <clipPath id="paint1_diamond_12701_8_clip_path"><path d="M6 2H26V-2H6V2ZM30 6V26H34V6H30ZM26 30H6V34H26V30ZM2 26V6H-2V26H2ZM6 30C3.79086 30 2 28.2091 2 26H-2C-2 30.4183 1.58172 34 6 34V30ZM30 26C30 28.2091 28.2091 30 26 30V34C30.4183 34 34 30.4183 34 26H30ZM26 2C28.2091 2 30 3.79086 30 6H34C34 1.58172 30.4183 -2 26 -2V2ZM6 -2C1.58172 -2 -2 1.58172 -2 6H2C2 3.79086 3.79086 2 6 2V-2Z" mask="url(#path-1-inside-1_12701_8)"/></clipPath><linearGradient id="paint0_linear_12701_8" x1="16" y1="0" x2="16" y2="32" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#00E0FF"/>
-                                                <stop offset="1" stop-color="#00E0FF" stop-opacity="0.49"/>
+                        <div class="program__text">
+                            Полностью весь курс состоит из 3 частей
+                        </div>
+                        <ul class="accordion-list">
+                            <li class="accordion-list__item ">
+                                <a class="accordion-list__control" href="#" id="flipButton">
+                                    <h3 class="accordion-list__control-title">
+                                        AI - Junior Level.
+                                        <span>
+                                            Продолжительность 1 год
+                                        </span>
+                                    </h3>
+                                    <div class="accordion-list__control-icon" id="icon">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_12701_8" fill="white">
+                                                <path
+                                                    d="M0 6C0 2.68629 2.68629 0 6 0H26C29.3137 0 32 2.68629 32 6V26C32 29.3137 29.3137 32 26 32H6C2.68629 32 0 29.3137 0 26V6Z" />
+                                            </mask>
+                                            <path
+                                                d="M0 6C0 2.68629 2.68629 0 6 0H26C29.3137 0 32 2.68629 32 6V26C32 29.3137 29.3137 32 26 32H6C2.68629 32 0 29.3137 0 26V6Z"
+                                                fill="url(#paint0_linear_12701_8)" fill-opacity="0.11" />
+                                            <g clip-path="url(#paint1_diamond_12701_8_clip_path)"
+                                                data-figma-skip-parse="true" mask="url(#path-1-inside-1_12701_8)">
+                                                <g transform="matrix(-0.015214 0.0149677 -0.0149677 -0.0357197 16 16)">
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        fill="url(#paint1_diamond_12701_8)" opacity="1"
+                                                        shape-rendering="crispEdges" />
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        transform="scale(1 -1)" fill="url(#paint1_diamond_12701_8)"
+                                                        opacity="1" shape-rendering="crispEdges" />
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        transform="scale(-1 1)" fill="url(#paint1_diamond_12701_8)"
+                                                        opacity="1" shape-rendering="crispEdges" />
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        transform="scale(-1)" fill="url(#paint1_diamond_12701_8)"
+                                                        opacity="1" shape-rendering="crispEdges" />
+                                                </g>
+                                            </g>
+                                            <path
+                                                d="M6 2H26V-2H6V2ZM30 6V26H34V6H30ZM26 30H6V34H26V30ZM2 26V6H-2V26H2ZM6 30C3.79086 30 2 28.2091 2 26H-2C-2 30.4183 1.58172 34 6 34V30ZM30 26C30 28.2091 28.2091 30 26 30V34C30.4183 34 34 30.4183 34 26H30ZM26 2C28.2091 2 30 3.79086 30 6H34C34 1.58172 30.4183 -2 26 -2V2ZM6 -2C1.58172 -2 -2 1.58172 -2 6H2C2 3.79086 3.79086 2 6 2V-2Z"
+                                                data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_DIAMOND&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.28627452254295349,&#34;g&#34;:0.72549021244049072,&#34;b&#34;:0.90980392694473267,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.12156862020492554,&#34;g&#34;:0.30196088552474976,&#34;b&#34;:0.37647059559822083,&#34;a&#34;:0.43000000715255737},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[],&#34;transform&#34;:{&#34;m00&#34;:-30.428070068359375,&#34;m01&#34;:-29.935483932495117,&#34;m02&#34;:46.181777954101562,&#34;m10&#34;:29.935483932495117,&#34;m11&#34;:-71.439468383789062,&#34;m12&#34;:36.751995086669922},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"
+                                                mask="url(#path-1-inside-1_12701_8)" />
+                                            <path d="M10.0605 18.9395L17.0605 11.9395M21.9392 18.9395L14.9392 11.9395"
+                                                stroke="#4ABCEC" stroke-width="3" />
+                                            <defs>
+                                                <clipPath id="paint1_diamond_12701_8_clip_path">
+                                                    <path
+                                                        d="M6 2H26V-2H6V2ZM30 6V26H34V6H30ZM26 30H6V34H26V30ZM2 26V6H-2V26H2ZM6 30C3.79086 30 2 28.2091 2 26H-2C-2 30.4183 1.58172 34 6 34V30ZM30 26C30 28.2091 28.2091 30 26 30V34C30.4183 34 34 30.4183 34 26H30ZM26 2C28.2091 2 30 3.79086 30 6H34C34 1.58172 30.4183 -2 26 -2V2ZM6 -2C1.58172 -2 -2 1.58172 -2 6H2C2 3.79086 3.79086 2 6 2V-2Z"
+                                                        mask="url(#path-1-inside-1_12701_8)" />
+                                                </clipPath>
+                                                <linearGradient id="paint0_linear_12701_8" x1="16" y1="0" x2="16"
+                                                    y2="32" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#00E0FF" />
+                                                    <stop offset="1" stop-color="#00E0FF" stop-opacity="0.49" />
                                                 </linearGradient>
-                                                <linearGradient id="paint1_diamond_12701_8" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#49B9E8"/>
-                                                <stop offset="1" stop-color="#1F4D60" stop-opacity="0.43"/>
+                                                <linearGradient id="paint1_diamond_12701_8" x1="0" y1="0" x2="500"
+                                                    y2="500" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#49B9E8" />
+                                                    <stop offset="1" stop-color="#1F4D60" stop-opacity="0.43" />
                                                 </linearGradient>
-                                                </defs>
-                                                </svg>
-                                        </div>
-                                    </a>
-                                    <div class="accordion-list__content">
-                                        <div class="accordion-content">
-
-                                        </div>
+                                            </defs>
+                                        </svg>
                                     </div>
-                                </li>
-                                <!-- <li class="accordion-list__item">
-                                    <a class="accordion-list__control" href="#">
-                                        <h3 class="accordion-list__control-title">
-                                            AI - Senior Level. 
-                                            <span>
-                                                Продолжительность 1.5 года. 
-                                            </span> 
-                                        </h3>
-                                        <div class="accordion-list__control-icon">
-                                            <svg>иконка</svg>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="accordion-list__item">
-                                    <a class="accordion-list__control" href="#">
-                                        <h3 class="accordion-list__control-title">
-                                            AI - Senior Level V2.0. 
-                                            <span>
-                                                Продолжительность 1.5 года. 
-                                            </span>  
-                                        </h3>
-                                        <div class="accordion-list__control-icon">
-                                            <svg>иконка</svg>
-                                        </div>
-                                    </a>
-                                </li> -->
-                            </ul>
-                        
+                                </a>
+                                <div class="accordion-list__content">
+                                    <div class="accordion__content">
+                                        <ul class="accordion__content-list">
+                                            <li class="accordion__content-item">
+                                                <span>Введение.</span>
+                                                В этой секции, мы познакомимся с историей человека, который
+                                                переквалифицировался в специалиста по искусственному интеллекту и
+                                                отвечаем на вопрос: "Стоит ли это того, чтобы потратить 2 года на
+                                                изучение искусственного интеллекта?" Также, мы разберём уроки, усвоенные
+                                                специалистами, прошедших путь от младших до главных специалистов.
+                                            </li>
+                                            <li class="accordion__content-item">
+                                                <span>Введение в программирование. </span>
+                                                Эта секция начинается с объяснения понятий проблемы, сути и целей
+                                                искусственного интеллекта. Ты узнаешь в чем разница между данными и
+                                                информацией. А также что такое качество информации. Мы разберём, что
+                                                такое алгоритмы, компьютерные программы и язык программирования Python,
+                                                и начнём работать в интегрированной среде разработки для языка Python.
+                                                Далее мы поймем суть переменных их свойства и типы. Именно с этой секции
+                                                ты начнёшь писать свои первые программные коды на языке программирования
+                                                Python. Мы изучим все аспекты этого удивительного языка. Далее мы
+                                                разберём такие библиотеки как Numpy, Pandas и Matplotlib. В этой секции
+                                                ты познакомишься со средой разработки Jupyter Notebook.
+                                            </li>
+                                            <li class="accordion__content-item">
+                                                <span>Введение в искусственный интеллект. </span>
+                                                Эта секция показывает нам, разницу между линейным и нелинейным
+                                                программированием. Описывает процесс получение знаний. Также, ты
+                                                узнаешь, в чем разница между AI, machine learning и deep learning. Также
+                                                обсудим виды искусственного интеллекта, его применения и примеры.
+                                            </li>
+                                            <li class="accordion__content-item">
+                                                <span>Алгоритм machine learning.</span>
+                                                ЭВ этих секциях, мы подробно разберём работу алгоритмов machine
+                                                learning. И ты создашь очень простую, но уже свою модель искусственного
+                                                интеллекта. Также ты научишься оценивать точность моделей. В этой секции
+                                                мы подробно начнём разбирать одну из библиотек искусственного интеллекта
+                                                scikit learn. Здесь же мы разберём другую среду разработки, которая
+                                                называется spyder.
+                                            </li>
+                                            <li class="accordion__content-item">
+                                                <span>Процесс разработки модели искусственного интеллекта и инженерия
+                                                    данных. </span>
+                                                Здесь мы подробно обсудим весь процесс разработки модели искусственного
+                                                интеллекта. Также мы начнём изучение анализа данных и их обработки для
+                                                обучения искусственного интеллекта. В этой секции я научу тебя
+                                                практическим примерам анализа и обработки данных от А до Я.
+                                            </li>
+                                            <li class="accordion__content-item">
+                                                <span>Отбор фичей. </span>
+                                                В этой секции из всех данных, что у нас есть, мы научимся отбирать
+                                                только те, что нам нужны для обучения искусственного интеллекта.
+                                            </li>
+                                            <li class="accordion__content-item">
+                                                <span>Чек лист почти для всех проектов искусственного интеллекта.
+                                                </span>
+                                                В этой секции я дам чек лист действий для построения end-to-end проектов
+                                                искусственного интеллекта.
+                                            </li>
+                                            <li class="accordion__content-item">
+                                                <span>Практические занятия. </span>
+                                                На практических занятиях мы научим наши модели искусственного интеллекта
+                                                следующим вещам: предсказывать нажатие на рекламу пользователем в
+                                                фейсбуке; определять рак груди; предсказывать ухода в отставку клиентов
+                                                банка; определять наличие кифоза у детей; определять положительные и
+                                                отрицательные отзывы yelp; определять положительные и отрицательные
+                                                отзывы на амазоне; определять спам письма; предсказывать наличие
+                                                болезней сердца у пациентов; определять износ деталей на токарном
+                                                станке.
+                                            </li>
+                                            <li class="accordion__content-item">
+                                                <span>Deep learning: Искусственные нейронные сети. </span>
+                                                В этой секции ты узнаешь, что такое deep learning и как это работает,
+                                                также ты поймешь, что такое нейроны и как нейроные сети обучаются. Мы
+                                                детально разберём все процессы, связанные с нейронными сетями. Ты также
+                                                познакомишься с библиотекой keras, фреймворком tensorflow и средой
+                                                разработки google colab.
+                                            </li>
+                                            <li class="accordion__content-item">
+                                                <span>Deep learning: конволюционные нейронные сети. </span>
+                                                Эта секция посвящена конволюционным нейронным сетям, которые применяются
+                                                в компьютерном зрении. Мы детально разберём как искусственный интеллект
+                                                распознает те или иные вещи, например, машины или яблоки.
+                                            </li>
+                                            <li class="accordion__content-item">
+                                                <span>Практические занятия.</span>
+                                                На этих занятиях ты разработаешь свои нейронные сети, которые смогут:
+                                                предсказывать цены автомобилей; предсказывать выходную мощность
+                                                электростанций (кейс виртуальных сенсоров); предсказывать поломки насоса
+                                                на основе данных из сенсоров насоса; распознавать рукописные цифры,
+                                                распознавать элементы одежды, распознавать различные объекты;
+                                                распознавать повреждённые автомобили; распознавать уличные дорожные
+                                                знаки для беспилотных автомобилей.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion-list__item">
+                                <a class="accordion-list__control" href="#">
+                                    <h3 class="accordion-list__control-title">
+                                        AI - Senior Level.
+                                        <span>
+                                            Продолжительность 1.5 года.
+                                        </span>
+                                        <p>В разработке</p>
+                                    </h3>
+                                    <div class="accordion-list__control-icon">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_12701_8" fill="white">
+                                                <path
+                                                    d="M0 6C0 2.68629 2.68629 0 6 0H26C29.3137 0 32 2.68629 32 6V26C32 29.3137 29.3137 32 26 32H6C2.68629 32 0 29.3137 0 26V6Z" />
+                                            </mask>
+                                            <path
+                                                d="M0 6C0 2.68629 2.68629 0 6 0H26C29.3137 0 32 2.68629 32 6V26C32 29.3137 29.3137 32 26 32H6C2.68629 32 0 29.3137 0 26V6Z"
+                                                fill="url(#paint0_linear_12701_8)" fill-opacity="0.11" />
+                                            <g clip-path="url(#paint1_diamond_12701_8_clip_path)"
+                                                data-figma-skip-parse="true" mask="url(#path-1-inside-1_12701_8)">
+                                                <g transform="matrix(-0.015214 0.0149677 -0.0149677 -0.0357197 16 16)">
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        fill="url(#paint1_diamond_12701_8)" opacity="1"
+                                                        shape-rendering="crispEdges" />
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        transform="scale(1 -1)" fill="url(#paint1_diamond_12701_8)"
+                                                        opacity="1" shape-rendering="crispEdges" />
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        transform="scale(-1 1)" fill="url(#paint1_diamond_12701_8)"
+                                                        opacity="1" shape-rendering="crispEdges" />
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        transform="scale(-1)" fill="url(#paint1_diamond_12701_8)"
+                                                        opacity="1" shape-rendering="crispEdges" />
+                                                </g>
+                                            </g>
+                                            <path
+                                                d="M6 2H26V-2H6V2ZM30 6V26H34V6H30ZM26 30H6V34H26V30ZM2 26V6H-2V26H2ZM6 30C3.79086 30 2 28.2091 2 26H-2C-2 30.4183 1.58172 34 6 34V30ZM30 26C30 28.2091 28.2091 30 26 30V34C30.4183 34 34 30.4183 34 26H30ZM26 2C28.2091 2 30 3.79086 30 6H34C34 1.58172 30.4183 -2 26 -2V2ZM6 -2C1.58172 -2 -2 1.58172 -2 6H2C2 3.79086 3.79086 2 6 2V-2Z"
+                                                data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_DIAMOND&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.28627452254295349,&#34;g&#34;:0.72549021244049072,&#34;b&#34;:0.90980392694473267,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.12156862020492554,&#34;g&#34;:0.30196088552474976,&#34;b&#34;:0.37647059559822083,&#34;a&#34;:0.43000000715255737},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[],&#34;transform&#34;:{&#34;m00&#34;:-30.428070068359375,&#34;m01&#34;:-29.935483932495117,&#34;m02&#34;:46.181777954101562,&#34;m10&#34;:29.935483932495117,&#34;m11&#34;:-71.439468383789062,&#34;m12&#34;:36.751995086669922},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"
+                                                mask="url(#path-1-inside-1_12701_8)" />
+                                            <path d="M10.0605 18.9395L17.0605 11.9395M21.9392 18.9395L14.9392 11.9395"
+                                                stroke="#4ABCEC" stroke-width="3" />
+                                            <defs>
+                                                <clipPath id="paint1_diamond_12701_8_clip_path">
+                                                    <path
+                                                        d="M6 2H26V-2H6V2ZM30 6V26H34V6H30ZM26 30H6V34H26V30ZM2 26V6H-2V26H2ZM6 30C3.79086 30 2 28.2091 2 26H-2C-2 30.4183 1.58172 34 6 34V30ZM30 26C30 28.2091 28.2091 30 26 30V34C30.4183 34 34 30.4183 34 26H30ZM26 2C28.2091 2 30 3.79086 30 6H34C34 1.58172 30.4183 -2 26 -2V2ZM6 -2C1.58172 -2 -2 1.58172 -2 6H2C2 3.79086 3.79086 2 6 2V-2Z"
+                                                        mask="url(#path-1-inside-1_12701_8)" />
+                                                </clipPath>
+                                                <linearGradient id="paint0_linear_12701_8" x1="16" y1="0" x2="16"
+                                                    y2="32" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#00E0FF" />
+                                                    <stop offset="1" stop-color="#00E0FF" stop-opacity="0.49" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_diamond_12701_8" x1="0" y1="0" x2="500"
+                                                    y2="500" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#49B9E8" />
+                                                    <stop offset="1" stop-color="#1F4D60" stop-opacity="0.43" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="accordion-list__item">
+                                <a class="accordion-list__control" href="#">
+                                    <h3 class="accordion-list__control-title">
+                                        AI - Senior Level V2.0.
+                                        <span>
+                                            Продолжительность 1.5 года.
+                                        </span>
+                                        <p>В разработке</p>
+                                    </h3>
+                                    <div class="accordion-list__control-icon">
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="path-1-inside-1_12701_8" fill="white">
+                                                <path
+                                                    d="M0 6C0 2.68629 2.68629 0 6 0H26C29.3137 0 32 2.68629 32 6V26C32 29.3137 29.3137 32 26 32H6C2.68629 32 0 29.3137 0 26V6Z" />
+                                            </mask>
+                                            <path
+                                                d="M0 6C0 2.68629 2.68629 0 6 0H26C29.3137 0 32 2.68629 32 6V26C32 29.3137 29.3137 32 26 32H6C2.68629 32 0 29.3137 0 26V6Z"
+                                                fill="url(#paint0_linear_12701_8)" fill-opacity="0.11" />
+                                            <g clip-path="url(#paint1_diamond_12701_8_clip_path)"
+                                                data-figma-skip-parse="true" mask="url(#path-1-inside-1_12701_8)">
+                                                <g transform="matrix(-0.015214 0.0149677 -0.0149677 -0.0357197 16 16)">
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        fill="url(#paint1_diamond_12701_8)" opacity="1"
+                                                        shape-rendering="crispEdges" />
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        transform="scale(1 -1)" fill="url(#paint1_diamond_12701_8)"
+                                                        opacity="1" shape-rendering="crispEdges" />
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        transform="scale(-1 1)" fill="url(#paint1_diamond_12701_8)"
+                                                        opacity="1" shape-rendering="crispEdges" />
+                                                    <rect x="0" y="0" width="1188.8" height="707.87"
+                                                        transform="scale(-1)" fill="url(#paint1_diamond_12701_8)"
+                                                        opacity="1" shape-rendering="crispEdges" />
+                                                </g>
+                                            </g>
+                                            <path
+                                                d="M6 2H26V-2H6V2ZM30 6V26H34V6H30ZM26 30H6V34H26V30ZM2 26V6H-2V26H2ZM6 30C3.79086 30 2 28.2091 2 26H-2C-2 30.4183 1.58172 34 6 34V30ZM30 26C30 28.2091 28.2091 30 26 30V34C30.4183 34 34 30.4183 34 26H30ZM26 2C28.2091 2 30 3.79086 30 6H34C34 1.58172 30.4183 -2 26 -2V2ZM6 -2C1.58172 -2 -2 1.58172 -2 6H2C2 3.79086 3.79086 2 6 2V-2Z"
+                                                data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_DIAMOND&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.28627452254295349,&#34;g&#34;:0.72549021244049072,&#34;b&#34;:0.90980392694473267,&#34;a&#34;:1.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.12156862020492554,&#34;g&#34;:0.30196088552474976,&#34;b&#34;:0.37647059559822083,&#34;a&#34;:0.43000000715255737},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[],&#34;transform&#34;:{&#34;m00&#34;:-30.428070068359375,&#34;m01&#34;:-29.935483932495117,&#34;m02&#34;:46.181777954101562,&#34;m10&#34;:29.935483932495117,&#34;m11&#34;:-71.439468383789062,&#34;m12&#34;:36.751995086669922},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"
+                                                mask="url(#path-1-inside-1_12701_8)" />
+                                            <path d="M10.0605 18.9395L17.0605 11.9395M21.9392 18.9395L14.9392 11.9395"
+                                                stroke="#4ABCEC" stroke-width="3" />
+                                            <defs>
+                                                <clipPath id="paint1_diamond_12701_8_clip_path">
+                                                    <path
+                                                        d="M6 2H26V-2H6V2ZM30 6V26H34V6H30ZM26 30H6V34H26V30ZM2 26V6H-2V26H2ZM6 30C3.79086 30 2 28.2091 2 26H-2C-2 30.4183 1.58172 34 6 34V30ZM30 26C30 28.2091 28.2091 30 26 30V34C30.4183 34 34 30.4183 34 26H30ZM26 2C28.2091 2 30 3.79086 30 6H34C34 1.58172 30.4183 -2 26 -2V2ZM6 -2C1.58172 -2 -2 1.58172 -2 6H2C2 3.79086 3.79086 2 6 2V-2Z"
+                                                        mask="url(#path-1-inside-1_12701_8)" />
+                                                </clipPath>
+                                                <linearGradient id="paint0_linear_12701_8" x1="16" y1="0" x2="16"
+                                                    y2="32" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#00E0FF" />
+                                                    <stop offset="1" stop-color="#00E0FF" stop-opacity="0.49" />
+                                                </linearGradient>
+                                                <linearGradient id="paint1_diamond_12701_8" x1="0" y1="0" x2="500"
+                                                    y2="500" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#49B9E8" />
+                                                    <stop offset="1" stop-color="#1F4D60" stop-opacity="0.43" />
+                                                </linearGradient>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="program__button button">
+                            Записаться на ознакомительный вебинар
+                        </button>
+                        <div class="program__line line"></div>
                     </div>
                 </div>
             </section>
+            <section class="main__author author">
+                <div class="container">
+                    <div class="author__inner">
+                        <div class="author__fon">
+                            <img class="author__fon-men" src="./img/fon/men.png" alt="">
+                            <img class="author__fon-network" src="./img/fon/network.png" alt="">
+                            <img class="author__fon-blick" src="./img/fon/blick.png" alt="">
+                            <div class="author__fon-text">
+                                Владимир Ким
+                                <span>Ведущий специалист</span>
+                            </div>
+                        </div>
+                        <div class="author__title">
+                            <h2>Автор курса </h2>
+                        </div>
+                        <div class="author__tetx">
+                            Основателем курса является Владимир Ким, действующий и ведущий специалист в области
+                            искусственного интеллекта в
+                            <br>Южной Корее, который разрабатывал системы искусственного интеллекта для компаний Samsung
+                            SDS, LG science park
+                            <br>и LG digital park.
+                            <p>
+                                На данный момент, Владимир занимается разработкой <br>виртуальных сенсоров на основе
+                                нейронных сетей.
+                            </p>
+                            <p>
+                                Является одним из авторов диссертации об обработке больших данных для Южнокорейского
+                                института по развитию Интернета.
+                            </p>
+                            <p>
+                                Действующий член ассоциации разработчиков программного обеспечения в Южной Корее.
+                            </p>
+                            <p>
+                                Активно участвует в R&D проектах по внедрению искусственного интеллекта для
+                                государственных предприятий Южной Кореи.
+                            </p>
+                        </div>
+                        <div class="author__line line"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__news news">
+                <div class="container">
+                    <div class="news__inner">
+                        <div class="news__title">
+                            <h2>Объявления школы</h2>
+                            <button class="news__button" type="button">
+                                Все объявления
+                            </button>
+                        </div>
+                        <div class="news__nav">
+                            <button class="news__prev">
+                                <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.469669 5.46967C0.176777 5.76256 0.176777 6.23744 0.469669 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989593 6.3033 0.696699C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.469669 5.46967ZM22 5.25L1 5.25V6.75L22 6.75V5.25Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                            <button class="news__next">
+                                <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.5303 5.46967C21.8232 5.76256 21.8232 6.23744 21.5303 6.53033L16.7574 11.3033C16.4645 11.5962 15.9896 11.5962 15.6967 11.3033C15.4038 11.0104 15.4038 10.5355 15.6967 10.2426L19.9393 6L15.6967 1.75736C15.4038 1.46447 15.4038 0.989593 15.6967 0.696699C15.9896 0.403806 16.4645 0.403806 16.7574 0.696699L21.5303 5.46967ZM0 5.25L21 5.25V6.75L0 6.75L0 5.25Z"
+                                        fill="white" />
+                                </svg>
+
+                            </button>
+                        </div>
+                        <div class="news__slider swiper">
+                            <div class="news__wrapper swiper-wrapper">
+                                <div class="news__slide swiper-slide">
+                                    <img src="./img/gallery/keyboard.png" alt="">
+                                    <div class="news__slide-data">
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_177_2172)">
+                                                <path
+                                                    d="M1.875 0V1.5H2.625V0H1.875ZM6.375 0V1.5H7.125V0H6.375ZM0.375 1.125C0.168457 1.125 0 1.29346 0 1.5V2.625C0 2.83154 0.168457 3 0.375 3V9H8.625V3C8.83154 3 9 2.83154 9 2.625V1.5C9 1.29346 8.83154 1.125 8.625 1.125H7.5V1.875H6V1.125H3V1.875H1.5V1.125H0.375ZM1.125 3H7.875V8.25H1.125V3ZM1.875 3.75V4.5H2.625V3.75H1.875ZM3.375 3.75V4.5H4.125V3.75H3.375ZM4.875 3.75V4.5H5.625V3.75H4.875ZM6.375 3.75V4.5H7.125V3.75H6.375ZM1.875 5.25V6H2.625V5.25H1.875ZM3.375 5.25V6H4.125V5.25H3.375ZM4.875 5.25V6H5.625V5.25H4.875ZM6.375 5.25V6H7.125V5.25H6.375ZM1.875 6.75V7.5H2.625V6.75H1.875ZM3.375 6.75V7.5H4.125V6.75H3.375ZM4.875 6.75V7.5H5.625V6.75H4.875ZM6.375 6.75V7.5H7.125V6.75H6.375Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_177_2172">
+                                                    <rect width="9" height="9" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        24 мая 2021
+                                    </div>
+                                    <div class="news__slide-title">
+                                        Заголовок объявления из несколькиз слов
+                                    </div>
+                                    <div class="news__slide-text">
+                                        Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                        совокупность различных между собой направлений.
+                                    </div>
+                                    <a class="news__slide-detailed" href="#">
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="news__slide swiper-slide">
+                                    <img src="./img/gallery/girl-book.png" alt="">
+                                    <div class="news__slide-data">
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_177_2172)">
+                                                <path
+                                                    d="M1.875 0V1.5H2.625V0H1.875ZM6.375 0V1.5H7.125V0H6.375ZM0.375 1.125C0.168457 1.125 0 1.29346 0 1.5V2.625C0 2.83154 0.168457 3 0.375 3V9H8.625V3C8.83154 3 9 2.83154 9 2.625V1.5C9 1.29346 8.83154 1.125 8.625 1.125H7.5V1.875H6V1.125H3V1.875H1.5V1.125H0.375ZM1.125 3H7.875V8.25H1.125V3ZM1.875 3.75V4.5H2.625V3.75H1.875ZM3.375 3.75V4.5H4.125V3.75H3.375ZM4.875 3.75V4.5H5.625V3.75H4.875ZM6.375 3.75V4.5H7.125V3.75H6.375ZM1.875 5.25V6H2.625V5.25H1.875ZM3.375 5.25V6H4.125V5.25H3.375ZM4.875 5.25V6H5.625V5.25H4.875ZM6.375 5.25V6H7.125V5.25H6.375ZM1.875 6.75V7.5H2.625V6.75H1.875ZM3.375 6.75V7.5H4.125V6.75H3.375ZM4.875 6.75V7.5H5.625V6.75H4.875ZM6.375 6.75V7.5H7.125V6.75H6.375Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_177_2172">
+                                                    <rect width="9" height="9" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        24 мая 2021
+                                    </div>
+                                    <div class="news__slide-title">
+                                        Заголовок объявления из несколькиз слов
+                                    </div>
+                                    <div class="news__slide-text">
+                                        Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                        совокупность различных между собой направлений.
+                                    </div>
+                                    <a class="news__slide-detailed" href="#">
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="news__slide swiper-slide">
+                                    <img src="./img/gallery/group-people.png" alt="">
+                                    <div class="news__slide-data">
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_177_2172)">
+                                                <path
+                                                    d="M1.875 0V1.5H2.625V0H1.875ZM6.375 0V1.5H7.125V0H6.375ZM0.375 1.125C0.168457 1.125 0 1.29346 0 1.5V2.625C0 2.83154 0.168457 3 0.375 3V9H8.625V3C8.83154 3 9 2.83154 9 2.625V1.5C9 1.29346 8.83154 1.125 8.625 1.125H7.5V1.875H6V1.125H3V1.875H1.5V1.125H0.375ZM1.125 3H7.875V8.25H1.125V3ZM1.875 3.75V4.5H2.625V3.75H1.875ZM3.375 3.75V4.5H4.125V3.75H3.375ZM4.875 3.75V4.5H5.625V3.75H4.875ZM6.375 3.75V4.5H7.125V3.75H6.375ZM1.875 5.25V6H2.625V5.25H1.875ZM3.375 5.25V6H4.125V5.25H3.375ZM4.875 5.25V6H5.625V5.25H4.875ZM6.375 5.25V6H7.125V5.25H6.375ZM1.875 6.75V7.5H2.625V6.75H1.875ZM3.375 6.75V7.5H4.125V6.75H3.375ZM4.875 6.75V7.5H5.625V6.75H4.875ZM6.375 6.75V7.5H7.125V6.75H6.375Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_177_2172">
+                                                    <rect width="9" height="9" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        24 мая 2021
+                                    </div>
+                                    <div class="news__slide-title">
+                                        Заголовок объявления из несколькиз слов
+                                    </div>
+                                    <div class="news__slide-text">
+                                        Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                        совокупность различных между собой направлений.
+                                    </div>
+                                    <a class="news__slide-detailed" href="#">
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="news__slide swiper-slide">
+                                    <img src="./img/gallery/laptop.png" alt="">
+                                    <div class="news__slide-data">
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_177_2172)">
+                                                <path
+                                                    d="M1.875 0V1.5H2.625V0H1.875ZM6.375 0V1.5H7.125V0H6.375ZM0.375 1.125C0.168457 1.125 0 1.29346 0 1.5V2.625C0 2.83154 0.168457 3 0.375 3V9H8.625V3C8.83154 3 9 2.83154 9 2.625V1.5C9 1.29346 8.83154 1.125 8.625 1.125H7.5V1.875H6V1.125H3V1.875H1.5V1.125H0.375ZM1.125 3H7.875V8.25H1.125V3ZM1.875 3.75V4.5H2.625V3.75H1.875ZM3.375 3.75V4.5H4.125V3.75H3.375ZM4.875 3.75V4.5H5.625V3.75H4.875ZM6.375 3.75V4.5H7.125V3.75H6.375ZM1.875 5.25V6H2.625V5.25H1.875ZM3.375 5.25V6H4.125V5.25H3.375ZM4.875 5.25V6H5.625V5.25H4.875ZM6.375 5.25V6H7.125V5.25H6.375ZM1.875 6.75V7.5H2.625V6.75H1.875ZM3.375 6.75V7.5H4.125V6.75H3.375ZM4.875 6.75V7.5H5.625V6.75H4.875ZM6.375 6.75V7.5H7.125V6.75H6.375Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_177_2172">
+                                                    <rect width="9" height="9" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        24 мая 2021
+                                    </div>
+                                    <div class="news__slide-title">
+                                        Заголовок объявления из несколькиз слов
+                                    </div>
+                                    <div class="news__slide-text">
+                                        Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                        совокупность различных между собой направлений.
+                                    </div>
+                                    <a class="news__slide-detailed" href="#">
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="news__slide swiper-slide">
+                                    <img src="./img/gallery/group-people.png" alt="">
+                                    <div class="news__slide-data">
+                                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_177_2172)">
+                                                <path
+                                                    d="M1.875 0V1.5H2.625V0H1.875ZM6.375 0V1.5H7.125V0H6.375ZM0.375 1.125C0.168457 1.125 0 1.29346 0 1.5V2.625C0 2.83154 0.168457 3 0.375 3V9H8.625V3C8.83154 3 9 2.83154 9 2.625V1.5C9 1.29346 8.83154 1.125 8.625 1.125H7.5V1.875H6V1.125H3V1.875H1.5V1.125H0.375ZM1.125 3H7.875V8.25H1.125V3ZM1.875 3.75V4.5H2.625V3.75H1.875ZM3.375 3.75V4.5H4.125V3.75H3.375ZM4.875 3.75V4.5H5.625V3.75H4.875ZM6.375 3.75V4.5H7.125V3.75H6.375ZM1.875 5.25V6H2.625V5.25H1.875ZM3.375 5.25V6H4.125V5.25H3.375ZM4.875 5.25V6H5.625V5.25H4.875ZM6.375 5.25V6H7.125V5.25H6.375ZM1.875 6.75V7.5H2.625V6.75H1.875ZM3.375 6.75V7.5H4.125V6.75H3.375ZM4.875 6.75V7.5H5.625V6.75H4.875ZM6.375 6.75V7.5H7.125V6.75H6.375Z"
+                                                    fill="white" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_177_2172">
+                                                    <rect width="9" height="9" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                        24 мая 2021
+                                    </div>
+                                    <div class="news__slide-title">
+                                        Заголовок объявления из несколькиз слов
+                                    </div>
+                                    <div class="news__slide-text">
+                                        Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                        совокупность различных между собой направлений.
+                                    </div>
+                                    <a class="news__slide-detailed" href="#">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__line line"></div>
+                    </div>
+            </section>
+            <section class="main__job job">
+                <div class="container">
+                    <div class="job__inner">
+                        <div class="job__title">
+                            <h2>Вакансии</h2>
+                            <button class="job__button" type="button">
+                                Все вакансии
+                            </button>
+                        </div>
+
+                        <div class="job__slider swiper">
+                            <div class="job__wrapper swiper-wrapper">
+                                <div class="job__slide swiper-slide">
+                                    <img src="./img/gallery/keyboard.png" alt="">
+                                    <div class="job__slide-title">
+                                        Требуется администратор
+                                    </div>
+                                    <div class="job__slide-text">
+                                        Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . от 1
+                                        года
+                                        Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Высшее
+                                        Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                        21-35 лет
+                                    </div>
+                                    <a class="job__slide-detailed" href="#">
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="job__slide swiper-slide">
+                                    <img src="./img/gallery/girl-book.png" alt="">
+                                    <div class="job__slide-title">
+                                        Требуется менеджер
+                                    </div>
+                                    <div class="job__slide-text">
+                                        Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . от 1
+                                        года
+                                        Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Высшее
+                                        Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                        21-35 лет
+                                    </div>
+                                    <a class="job__slide-detailed" href="#">
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="job__slide swiper-slide">
+                                    <img src="./img/gallery/group-people.png" alt="">
+                                    <div class="job__slide-title">
+                                        Требуется администратор
+                                    </div>
+                                    <div class="job__slide-text">
+                                        Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . от 1
+                                        года
+                                        Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Высшее
+                                        Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                        21-35 лет
+                                    </div>
+                                    <a class="job__slide-detailed" href="#">
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="job__slide swiper-slide">
+                                    <img src="./img/gallery/laptop.png" alt="">
+                                    <div class="job__slide-title">
+                                        Требуется менеджер
+                                    </div>
+                                    <div class="job__slide-text">
+                                        Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . от 1
+                                        года
+                                        Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Высшее
+                                        Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                        21-35 лет
+                                    </div>
+                                    <a class="job__slide-detailed" href="#">
+                                        Подробнее
+                                    </a>
+                                </div>
+                                <div class="job__slide swiper-slide">
+                                    <img src="./img/gallery/group-people.png" alt="">
+                                    <div class="job__slide-title">
+                                        Требуется администратор
+                                    </div>
+                                    <div class="job__slide-text">
+                                        Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . от 1
+                                        года
+                                        Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . Высшее
+                                        Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                        21-35 лет
+                                    </div>
+                                    <a class="job__slide-detailed" href="#">
+                                        Подробнее
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="job__nav">
+                                <button class="job__prev">
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.469669 5.46967C0.176777 5.76256 0.176777 6.23744 0.469669 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989593 6.3033 0.696699C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.469669 5.46967ZM22 5.25L1 5.25V6.75L22 6.75V5.25Z"
+                                            fill="white" />
+                                    </svg>
+                                </button>
+                                <button class="job__next">
+                                    <svg width="22" height="12" viewBox="0 0 22 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M21.5303 5.46967C21.8232 5.76256 21.8232 6.23744 21.5303 6.53033L16.7574 11.3033C16.4645 11.5962 15.9896 11.5962 15.6967 11.3033C15.4038 11.0104 15.4038 10.5355 15.6967 10.2426L19.9393 6L15.6967 1.75736C15.4038 1.46447 15.4038 0.989593 15.6967 0.696699C15.9896 0.403806 16.4645 0.403806 16.7574 0.696699L21.5303 5.46967ZM0 5.25L21 5.25V6.75L0 6.75L0 5.25Z"
+                                            fill="white" />
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="job__line line"></div>
+                    </div>
+            </section>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__inner-top">
@@ -440,7 +1057,7 @@
                             </address>
                         </div>
                         <address class="footer__socials">
-                            Мы в соц сетях
+                            <span>Мы в соц сетях</span>
                             <a href="#">
                                 <img src="./img/icon/facebook.png" alt="">
                             </a>
@@ -472,12 +1089,27 @@
                             </div>
                         </div>
                     </div>
+                    <div class="footer__up">
+                        <a class="footer__up-img" href="#header">
+                            <svg width="16" height="30" viewBox="0 0 16 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M8.70711 0.292892C8.31658 -0.0976315 7.68342 -0.0976314 7.29289 0.292892L0.928931 6.65685C0.538407 7.04738 0.538407 7.68054 0.928931 8.07107C1.31946 8.46159 1.95262 8.46159 2.34314 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292892ZM9 30L9 1L7 1L7 30L9 30Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                        <div class="footer__up-text">
+                            Подняться вверх
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </footer>
     </div>
-    <script src="./main.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
